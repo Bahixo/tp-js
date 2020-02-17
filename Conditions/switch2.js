@@ -1,5 +1,5 @@
 let year = 2020;
-let born = prompt("En quelle êtes vous né(e)?");
+let born = prompt("En quelle années êtes vous né(e)?");
 let majeur = year-born>= 18; //histoire de voir un peu les booléens
 
 if(majeur){
