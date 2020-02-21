@@ -13,10 +13,13 @@ function f42(){
 }
 
 function add3(x){
+    x=Number(x);
     return x+3;
 }
 
 function year(x, y){
+    x=Number(x);
+    y=Number(y);
     return x+y;
 }
 
@@ -35,8 +38,8 @@ switch(appel){
         break;
     
     case "3":
-        let nbr= add3(prompt("Donnez moi un nombre"));
-        log(nbr);
+        let nbrs= add3(prompt("Donnez moi un nombre"));
+        log(nbrs);
         break;
 
     case "4":
