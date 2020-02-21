@@ -1,11 +1,11 @@
 let choix =["un homme", "mineur", "majeur", "une femme", "mineure","majeure"];
-let Vsex, Vage;
+let vSex, vAge, sex, age;
 let retry=true
 while(retry){
-    let sex = prompt ("Etes vous un Homme ou une Femme?");
+    sex = prompt ("Etes vous un Homme ou une Femme?");
     retry = sex!= "Homme" && sex!= "H" && sex!="Femme" && sex!="F";
     sex= sex=="H" || sex=="Homme";
-    let age = prompt ("Quel âge avez vous?");
+    age = prompt ("Quel âge avez vous?");
     retry = age<1 || retry
     if(retry){
         alert("Information incorrect détectée.\nRecommencez !");
@@ -13,15 +13,15 @@ while(retry){
 }
 //alert("Sorti de While OK");  // Ligne de test
 if(sex) {
-    Vsex= 0;
+    vSex= 0;
 } else {
-    Vsex= 3;
+    vSex= 3;
 }
 
 if(age<18) {
-    Vage=Vsex+1;
+    vAge=vSex+1;
 } else {
-    Vage=Vsex+2;
+    vAge=vSex+2;
 }
 
-alert("Vous êtes donc "+ choix[Vsex] +"et êtes "+ choix[Vage]);
+alert("Vous êtes donc "+ choix[vSex] +" et êtes "+ choix[vAge]);
